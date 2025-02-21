@@ -16,7 +16,7 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read a line");
 
-        let guess = match guess .trim() .parse::<i32>() {
+        let guess = match guess.trim().parse::<i32>() {
             Ok(val) => val,
             Err(_) => {
                 println!("Your input is not a number. Try again.");
