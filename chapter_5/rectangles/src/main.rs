@@ -11,7 +11,6 @@ impl Rectangle {
             height: size,
         }
     }
-
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -19,17 +18,14 @@ impl Rectangle {
     fn can_hold(&self, rect: &Rectangle) -> bool {
         self.width > rect.width && self.height > rect.height
     }
+
+    fn set_width(&mut self, width: u32) {
+        self.width = width;
+    }
 }
 
 fn main() {
-    let scale = 2;
-    let rect1 = Rectangle {
-        width: dbg!(20 * scale),
-        height: 40,
-    };
-
-    let square = Rectangle::square(3);
-
-    dbg!(&rect1);
-    println!("{}", rect1.area());
+    let a = 5;
+    let b = &a;
+    println!("{}", b);
 }
