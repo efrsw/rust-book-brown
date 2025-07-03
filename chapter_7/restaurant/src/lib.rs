@@ -1,7 +1,7 @@
 mod front_of_house;
 
-use front_of_house::hosting::another_func;
+use front_of_house::hosting::new_name;
 
 fn export_func() {
-    another_func();
+    new_name();
 }

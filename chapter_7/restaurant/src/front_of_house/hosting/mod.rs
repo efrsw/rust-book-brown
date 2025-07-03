@@ -1,1 +1,1 @@
-pub fn another_func() {}
+pub fn new_name() {}
